@@ -1,0 +1,19 @@
+CURA SETTING 
+X(width):147
+Y(deep):130
+Z(high):100
+type:rectangular
+Start G-code
+; Ender 3 Custom Start G-code
+M280 P0 S140;
+G4 P2000;
+M280 P0 S160 ;
+G28 ; Home all axes
+G29 ;
+
+End G-code
+G91 ;Relative positioning
+
+G90 ;Absolute positionning
+
+G1 Z 100;
