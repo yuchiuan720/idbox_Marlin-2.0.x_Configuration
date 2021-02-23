@@ -1,10 +1,10 @@
 # idbox_Marlin-2.0.x_Configuration
 idbox_Marlin-2.0.x_Configuration
-LCD DISPLAY FAILED INFO
+LCD DISPLAY FAILED INFO<br>
 https://www.youtube.com/watch?v=yh-PQ7BpZl8&ab_channel=SteveWagg
 
 marlin pid calibration
-use software tools:Pronterface
+use software tools:Pronterface<br>
 run command:M303 C8 S220
 
 
