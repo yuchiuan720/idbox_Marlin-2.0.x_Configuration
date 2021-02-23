@@ -1,5 +1,7 @@
 # idbox_Marlin-2.0.x_Configuration
 idbox_Marlin-2.0.x_Configuration
+LCD DISPLAY FAILED INFO
+https://www.youtube.com/watch?v=yh-PQ7BpZl8&ab_channel=SteveWagg
 
 126c126
 < #define BAUDRATE 250000
