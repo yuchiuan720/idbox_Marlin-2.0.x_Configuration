@@ -1,4 +1,5 @@
 # idbox_Marlin-2.0.x_Configuration
+<P>
 idbox_Marlin-2.0.x_Configuration
 LCD DISPLAY FAILED INFO<br>
 https://www.youtube.com/watch?v=yh-PQ7BpZl8&ab_channel=SteveWagg
@@ -130,3 +131,4 @@ run command:M303 C8 S220
 < #define Z_MAX_POS 200
 ---
 > #define Z_MAX_POS 100
+</P>
