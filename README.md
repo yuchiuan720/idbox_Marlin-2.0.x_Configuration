@@ -1,5 +1,6 @@
 # idbox_Marlin-2.0.x_Configuration
 idbox_Marlin-2.0.x_Configuration
+
 126c126
 < #define BAUDRATE 250000
 ---
