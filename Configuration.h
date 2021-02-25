@@ -493,9 +493,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.0 }
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
-    #define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114.00
+    #define DEFAULT_Kp  17.84
+    #define DEFAULT_Ki   1.18
+    #define DEFAULT_Kd  67.60
   #endif
 #endif // PIDTEMP
 
@@ -729,13 +729,21 @@
  * total number of extruders, the last value applies to the rest.
  */
 //#define DISTINCT_E_FACTORS
-
+/**
+* 原步進數值 x 原圖標準尺寸(mm) ÷ 實際丈量尺寸(mm) = 最新校準後的步進數值
+* 下例假設 (X軸)寬度實際丈量結果是比原圖標準尺寸還超出 3mm ...
+* 80 x 100 ÷ 103 = 77.67 <-- 將 X-axis steps per mm 欄位中原本的數值(80), 
+* 改為 77.67, 如此將會縮減尺寸(減少原本超出3mm的寬度)
+* 下例假設 (Y軸)長度實際丈量結果是比原圖標準尺寸還要少 3mm ...
+* 80 x 100 ÷ 97 = 82.47 <-- 將 Y-axis steps per mm 欄位中原本的數值(80), 
+* 改為 82.47, 如此將會增大尺寸(減少原本超出3mm的長度) 
+*/
 /**
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 71.1111, 71.1111, 3200, 173.6236 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 72.9, 72.5, 3152, 173.6236 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1116,7 +1124,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 147
+#define X_BED_SIZE 150
 #define Y_BED_SIZE 130
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1679,7 +1687,7 @@
  *
  * :{ 'en':'English', 'an':'Aragonese', 'bg':'Bulgarian', 'ca':'Catalan', 'cz':'Czech', 'da':'Danish', 'de':'German', 'el':'Greek', 'el_gr':'Greek (Greece)', 'es':'Spanish', 'eu':'Basque-Euskera', 'fi':'Finnish', 'fr':'French', 'gl':'Galician', 'hr':'Croatian', 'hu':'Hungarian', 'it':'Italian', 'jp_kana':'Japanese', 'ko_KR':'Korean (South Korea)', 'nl':'Dutch', 'pl':'Polish', 'pt':'Portuguese', 'pt_br':'Portuguese (Brazilian)', 'ro':'Romanian', 'ru':'Russian', 'sk':'Slovak', 'tr':'Turkish', 'uk':'Ukrainian', 'vi':'Vietnamese', 'zh_CN':'Chinese (Simplified)', 'zh_TW':'Chinese (Traditional)', 'test':'TEST' }
  */
-#define LCD_LANGUAGE en
+#define LCD_LANGUAGE zh_TW
 
 /**
  * LCD Character Set
