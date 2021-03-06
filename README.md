@@ -1,37 +1,34 @@
 # idbox_Marlin-2.0.x_Configuration
-<P>
-印表機設定:
-  常規:
-  最大列印高度: 100
-  機器限制: ignore
-  自定義G-code:
-    ;clean nollzer start gcode
-    M109 S215                  ;Uncomment to set your own temp
-    G21                        ;Set to metric
-    G90                        ;Force coordinates to be absolute relative to the origi
-    G28                        ;Home all axes
-    G1 X1 Y3 Z0.15 F500        ;Move in 1mm from edge and up z 0.2mm
-    G92 E 0                     ;Set extruder to zero
-    G1 X70 E35 F500            ;Extrude 100mm filiment along Y axis 290mm long to prime and clean the nozzle
-    G92 E0                     ;Reset extruder to zero end of cleaning run
-  擠出頭1:
-      層高度限制:0.3003
-列印設置:<br>
-  層和輪廓:<br>
-    層高:
-      層高: 0.2毫米
-      首層高度: 0.15mm或%
-    垂直外殼:
-      輪廓: 2
-    水平外殼:
-      可靠層數: 頂部: 2  底部: 2
-  速度:<br>
-    列印移動的速度:
-      輪廓: 60 mm/s
+<BR>印表機設定:
+<BR>  常規:
+<BR>  最大列印高度: 100
+<BR>  機器限制: ignore
+<BR>  自定義G-code:
+<BR>    ;clean nollzer start gcode
+<BR>    M109 S215                  ;Uncomment to set your own temp
+<BR>    G21                        ;Set to metric
+<BR>    G90                        ;Force coordinates to be absolute relative to the origi
+<BR>    G28                        ;Home all axes
+<BR>    G1 X1 Y3 Z0.15 F500        ;Move in 1mm from edge and up z 0.2mm
+<BR>    G92 E 0                     ;Set extruder to zero
+<BR>    G1 X70 E35 F500            ;Extrude 100mm filiment along Y axis 290mm long to prime and clean the nozzle
+<BR>    G92 E0                     ;Reset extruder to zero end of cleaning run
+<BR>  擠出頭1:
+<BR>      層高度限制:0.3003
+<BR>列印設置:
+<BR>  層和輪廓:
+<BR>    層高:
+<BR>      層高: 0.2毫米
+<BR>      首層高度: 0.15mm或%
+<BR>    垂直外殼:
+<BR>      輪廓: 2
+<BR>    水平外殼:
+<BR>      可靠層數: 頂部: 2  底部: 2
+<BR>  速度:
+<BR>    列印移動的速度:
+<BR>      輪廓: 60 mm/s
   
   
-  
-    
 
 ;end gcode
 G91 ;Relative positioning
